@@ -17,6 +17,7 @@ class UserDashboard < Administrate::BaseDashboard
     remember_token: Field::String,
     role: Field::String,
     password: Field::String,
+    avatar: PaperclipField,
   }
 
   # COLLECTION_ATTRIBUTES
@@ -30,6 +31,7 @@ class UserDashboard < Administrate::BaseDashboard
     :updated_at,
     :email,
     :role,
+    :avatar,
   ]
 
   # SHOW_PAGE_ATTRIBUTES
@@ -40,6 +42,7 @@ class UserDashboard < Administrate::BaseDashboard
     :updated_at,
     :email,
     :role,
+    :avatar,
   ]
 
   # FORM_ATTRIBUTES
@@ -49,6 +52,7 @@ class UserDashboard < Administrate::BaseDashboard
     :email,
     :role,
     :password,
+    :avatar,
   ]
 
   # Overwrite this method to customize how users are displayed

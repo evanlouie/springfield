@@ -59,3 +59,4 @@ end
 
 gem "clearance"
 gem "administrate" # DISABLE_SPRING=1 rails generate administrate:install
+gem "paperclip"
