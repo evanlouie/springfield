@@ -9,4 +9,6 @@ Rails.application.routes.draw do
 
   resources :deals
   resources :businesses
+
+  root to: 'admin/businesses#index'
 end

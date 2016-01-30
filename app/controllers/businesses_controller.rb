@@ -4,6 +4,12 @@ class BusinessesController < ApplicationController
   # GET /businesses
   def index
     @businesses = Business.all
+
+    respond_to do |format|
+      format.html
+      format.xml { render xml: @businesses.to_xml }
+      format.json { render json: @businesses.to_json }
+    end
   end
 
   # GET /businesses/1
