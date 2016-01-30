@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby "2.3.0"
 
-gem "airbrake"
+# gem "airbrake"
 gem "autoprefixer-rails"
 gem "bourbon", "~> 4.2.0"
 gem "coffee-rails", "~> 4.1.0"
@@ -58,3 +58,4 @@ group :staging, :production do
 end
 
 gem "clearance"
+gem "administrate" # DISABLE_SPRING=1 rails generate administrate:install
